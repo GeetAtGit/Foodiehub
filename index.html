@@ -1,0 +1,223 @@
+<?php
+session_start();
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FoodieHub - Order Your Favorites</title>
+    
+    <link rel="stylesheet" href="foodstyle.css">
+    <script src="foodhub.js"></script>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+           
+            
+            <img src="foodbg1.jpg" alt="Food Item 1" id="symbol">
+            <!-- <p>Your One-Stop Food Ordering Destination</p> -->
+        </div>
+        <div>
+        <nav id="navelement">
+            <ul>
+                <li class="listele"><a href="#menu">Menu</a></li>
+                <li class="listele"><a href="#about">About Us</a></li>
+                <li class="listele"><a href="cart.html">Cart</a></li>
+                <li class="listele"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <center>
+
+    <img class="banner" src="fdelivery.jpg" alt="food del">
+    </center>
+
+    <section id="menu">
+        <div class="menu-item">
+            <img src="food1.jpg" alt="Food Item 1">
+            <h2>Delicious Pasta</h2>
+            <p>Indulge in our exquisite pasta dish. Perfectly cooked pasta with rich and flavorful sauce. Served with your choice of side salad.</p>
+            <p class="price">Rs.299</p>
+            <button class="add-to-cart" data-item="Delicious Pasta" data-price="299">Add to Cart</button>
+
+        </div>
+
+        <div class="menu-item">
+            <img src="food2.jpg" alt="Food Item 2">
+            <h2>Savory Sushi Rolls</h2>
+            <p>Experience the freshness of our sushi rolls. A delightful combination of flavors and textures.</p>
+            <p class="price">Rs.149</p>
+            <button class="add-to-cart" data-item="Savory Sushi Rolls" data-price="149">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h2>Classic Margherita Pizza</h2>
+            <p>Authentic Italian pizza topped with fresh tomatoes, mozzarella, and basil leaves.</p>
+            <p class="price">Rs.199</p>
+            <button class="add-to-cart" data-item="Classic Margherita Pizza" data-price="199">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger">
+            <h2>Juicy Aloo Patty Burger</h2>
+            <p>Savor the juiciness of our aloo patty burger, topped with crispy lettuce and our secret sauce.</p>
+            <p class="price">Rs.199</p>
+            <button class="add-to-cart" data-item="Juicy Aloo Patty Burger" data-price="199">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="fries.jpg" alt="Fries">
+            <h2>Golden Crispy Fries</h2>
+            <p>Enjoy our golden crispy fries, perfectly seasoned and served with your favorite dipping sauce.</p>
+            <p class="price">Rs.99</p>
+            <button class="add-to-cart" data-item="Golden Crispy Fries" data-price="99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="ctikka.jpg" alt="ctikka">
+            <h2>Chicken tikka</h2>
+            <p>Chicken grilled to perfection. Served with roasted vegetables and mint chutney.</p>
+            <p class="price">Rs.299</p>
+            <button class="add-to-cart" data-item="Chicken tikka" data-price="299">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="dessert.jpg" alt="Dessert">
+            <h2>Decadent Chocolate Cake</h2>
+            <p>Indulge your sweet tooth with our rich and decadent chocolate cake. Served with a scoop of vanilla ice cream.</p>
+            <p class="price">Rs.89</p>
+            <button class="add-to-cart" data-item="Decadent Chocolate Cake" data-price="89">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="scheese.jpg" alt="New Dessert">
+            <h2>Delightful Strawberry Cheesecake</h2>
+            <p>Satisfy your sweet cravings with our delightful strawberry cheesecake. A perfect blend of creamy cheesecake and fresh strawberries.</p>
+            <p class="price">Rs.129</p>
+            <button class="add-to-cart" data-item="Delightful Strawberry Cheesecake" data-price="129">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="bcheese.jpg" alt="New Dessert">
+            <h2>Delightful Blueberry Cheesecake</h2>
+            <p>Satisfy your sweet cravings with our delightful blueberry cheesecake. A perfect blend of creamy cheesecake and fresh strawberries.</p>
+            <p class="price">Rs.129</p>
+            <button class="add-to-cart" data-item="Delightful Blueberry Cheesecake" data-price="129">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="chocolava.jpg" alt="Chocolava Cake">
+            <h2>Irresistible Chocolava Cake</h2>
+            <p>Experience pure bliss with our irresistibly gooey chocolava cake. A chocolate lover's dream come true!</p>
+            <p class="price">Rs.119</p>
+            <button class="add-to-cart" data-item="Irresistible Chocolava Cake" data-price="119">Add to Cart</button>
+        </div>
+    
+        <!-- New Dessert Item: Churros -->
+        <div class="menu-item">
+            <img src="churros.jpg" alt="Churros">
+            <h2>Crispy Cinnamon Churros</h2>
+            <p>Indulge in the crispy goodness of our cinnamon-sugar coated churros. Served with a side of rich chocolate dipping sauce.</p>
+            <p class="price">Rs.99</p>
+            <button class="add-to-cart" data-item="Crispy Cinnamon Churros" data-price="99">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="bshake.jpg" alt="Banana Nutella Shake">
+            <h2>Banana Nutella Shake</h2>
+            <p>Experience the perfect blend of banana and Nutella in our creamy shake. A delightful treat for chocolate lovers!</p>
+            <p class="price">Rs.99</p>
+            <button class="add-to-cart" data-item="Banana Nutella Shake" data-price="99">Add to Cart</button>
+        </div>
+    
+        <!-- Additional Shake 2: Cookies and Cream Shake -->
+        <div class="menu-item">
+            <img src="ccshake.jpg" alt="Cookies and Cream Shake">
+            <h2>Cookies and Cream Shake</h2>
+            <p>Indulge in the classic combination of cookies and cream. Our shake is rich, creamy, and oh-so-satisfying.</p>
+            <p class="price">Rs.109</p>
+            <button class="add-to-cart" data-item="Cookies and Cream Shake" data-price="109">Add to Cart</button>
+        </div>
+    
+        <!-- Additional Shake 3: Mango Tango Shake -->
+        <div class="menu-item">
+            <img src="mshake.jpg" alt="Mango Tango Shake">
+            <h2>Mango Tango Shake</h2>
+            <p>Savor the tropical goodness of our Mango Tango Shake. A refreshing blend of ripe mangoes and creamy goodness.</p>
+            <p class="price">Rs.94</p>
+            <button class="add-to-cart" data-item="Mango Tango Shake" data-price="94">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="bbmock.jpg" alt="Berry Blast Mocktail">
+            <h2>Berry Blast Mocktail</h2>
+            <p>Enjoy the burst of mixed berries in our Berry Blast Mocktail. A fruity and refreshing non-alcoholic beverage.</p>
+            <p class="price">Rs.85</p>
+            <button class="add-to-cart" data-item="Berry Blast Mocktail" data-price="85">Add to Cart</button>
+        </div>
+    
+        <!-- Additional Mocktail 2: Citrus Splash Mocktail -->
+        <div class="menu-item">
+            <img src="cmock.jpg" alt="Citrus Splash Mocktail">
+            <h2>Citrus Splash Mocktail</h2>
+            <p>Revitalize your taste buds with our Citrus Splash Mocktail. A zesty combination of citrus fruits for a tangy twist.</p>
+            <p class="price">Rs.79</p>
+            <button class="add-to-cart" data-item="Citrus Splash Mocktail" data-price="79">Add to Cart</button>
+        </div>
+    
+        <!-- Additional Mocktail 3: Pineapple Paradise Mocktail -->
+        <div class="menu-item">
+            <img src="pmock.jpg" alt="Pineapple Paradise Mocktail">
+            <h2>Pineapple Paradise Mocktail</h2>
+            <p>Escape to a tropical paradise with our Pineapple Paradise Mocktail. A refreshing blend of pineapple and coconut.</p>
+            <p class="price">Rs.88</p>
+            <button class="add-to-cart" data-item="Pineapple Paradise Mocktail" data-price="88">Add to Cart</button>
+        </div>
+
+        <div class="menu-item">
+            <img src="dwater.jpg" alt="Detox Water">
+            <h2>Revitalizing Detox Water</h2>
+            <p>Revitalize your senses with our refreshing Detox Water. Infused with a blend of citrus fruits, mint, and cucumber for a cleansing experience.</p>
+            <p class="price">Rs.69</p>
+            <button class="add-to-cart" data-item="Revitalizing Detox Water" data-price="69">Add to Cart</button>
+        </div>
+    
+    
+    
+    
+
+        <!-- Add more menu items with additional details -->
+
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <h2>About FoodieHub</h2>
+            <p>Welcome to FoodieHub, your go-to destination for ordering delicious and high-quality food. We strive to bring you a diverse menu with something for every palate.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or feedback, feel free to reach out to us:</p>
+            <p>Email: info@foodiehub.com</p>
+            <p>Phone: (123) 456-7890</p>
+        </div>
+    </section>
+    
+
+    <footer>
+        <p>&copy; 2024 FoodieHub - Order Your Favorites</p>
+    </footer>
+
+  
+</body>
+</html>
